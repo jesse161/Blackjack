@@ -125,8 +125,8 @@ class Game():
 					player.last_results += "B"
 					dealer.losses += 1
 					dealer.last_results += "L"
-					dealer.cash -= 1.2 * player_spot.chips
-					player_spot.chips += 1.2 * player_spot.chips
+					dealer.cash -= 1.5 * player_spot.chips
+					player_spot.chips += 1.5 * player_spot.chips
 				elif player_score > 21 or player_spot < dealer_spot:
 					player.losses += 1
 					player.last_results += "L"
@@ -403,7 +403,7 @@ class Card():
 			return (int(self.rank),)
 
 def main():
-	N = 200
+	N = 1000
 	x = np.empty(N) #mean hourly profit from day i for all i in n
 	for i in range(N):
 		croft_and_jessen = House()
