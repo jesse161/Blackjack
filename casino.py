@@ -403,7 +403,7 @@ class Card():
 			return (int(self.rank),)
 
 def main():
-	N = 1000
+	N = 500
 	x = np.empty(N) #mean hourly profit from day i for all i in n
 	for i in range(N):
 		croft_and_jessen = House()
